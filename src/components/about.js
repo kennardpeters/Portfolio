@@ -38,7 +38,7 @@ export default function About() {
                             Hello, I'm{" "}
                             <span className="text-green-100">{author.name}</span>
                         </h1>
-                        <div className="prose lg:prose-xl text-blue-400">
+                        <div className="prose lg:prose-xl text-white-800">
                             <BlockContent blocks={author.bio} projectId="w6gbeasc" dataset="production" />
                         </div>
                     </div>
