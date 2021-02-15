@@ -5,10 +5,16 @@
 /*Import fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@450');
+
 /*Custom Elments required*/
 .cursive {
   font-family: "Amatic SC", cursive;
   font-weight: 700;
+}
+.crimson {
+  font-family: "Crimson Pro";
+  font-weight: 450;
 }
 
 .prose img {
