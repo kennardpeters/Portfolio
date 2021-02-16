@@ -4,33 +4,33 @@ import { SocialIcon } from "react-social-icons";
 
 export default function NavBar() {
     return (
-        <header className="bg-blue-800">
+        <header className="bg-black">
             <div className="container mx-auto flex justify-between">
                 <nav className="flex">
                     <NavLink 
                     to="/" 
                     exact 
                     activeClassName="text-white"
-                    className="inflex-flex items-center py-6 px-3 mr-4 text-green-100 hover:text-green-800 text-4xl font-bold crimson tracking-widest"
+                    className="inflex-flex items-center py-6 px-3 mr-4 text-yellow-200 hover:text-white-800 text-4xl font-bold crimson tracking-widest"
                     >
                         Kennard
                     </NavLink>
                     <NavLink 
                     to="/post"
-                    className="inline-flex items-center py-3 px-3 my-6 rounded text-green-200 hover:text-green-800"
+                    className="inline-flex items-center py-3 px-3 my-6 rounded text-yellow-200 hover:text-green-800"
                     activeClassName="text-red-100 bg-red-700"
                     >
                         Blog Posts
                     </NavLink>
                     <NavLink 
                     to="/project"
-                    className="inline-flex items-center py-3 px-3 my-6 rounded text-green-200 hover:text-green-800"
+                    className="inline-flex items-center py-3 px-3 my-6 rounded text-yellow-200 hover:text-green-800"
                     activeClassName="text-red-100 bg-red-700"
                     >
                         Projects
                     </NavLink>
                     <NavLink to="/about"
-                    className="inline-flex items-center py-3 px-3 my-6 rounded text-green-200 hover:text-green-800"
+                    className="inline-flex items-center py-3 px-3 my-6 rounded text-yellow-200 hover:text-green-800"
                     activeClassName="text-red-100 bg-red-700"
                     >
                         About Me!
