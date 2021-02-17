@@ -7,7 +7,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@450');
 
+@import url('https://fonts.googleapis.com/css2?family=Hanalei&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ballet&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 /*Custom Elments required*/
+.ballet {
+  font-family: 'Ballet', cursive;
+  font-weight: 700;
+}
 .cursive {
   font-family: "Amatic SC", cursive;
   font-weight: 700;
@@ -16,12 +32,36 @@
   font-family: "Crimson Pro";
   font-weight: 450;
 }
+.daughter {
+  font-family: "Architects Daughter", cursive;
+  font-weight: 400;
+}
+.hanalei {
+  font-family: "Hanalei", cursive;
+  font-weight: 700;
+}
+
+.orbitron {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+}
+
+.raleway {
+  font-family: "Raleway";
+  font-weight: 300;
+}
+
+.gvibes {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+}
 
 .prose img {
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
 }
+
 
 .home-name {
   font-size: 150px;

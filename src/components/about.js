@@ -34,11 +34,11 @@ export default function About() {
                     className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8"
                     alt={author.name} />
                     <div className="text-lg flex-col justify-center">
-                        <h1 className="crimson text-6xl text-yellow-300 mb-4">
+                        <h1 className="crimson text-6xl text-purple-300 mb-4">
                             Hello, I'm{" "}
-                            <span className="text-yellow-100">{author.name}</span>
+                            <span className="ballet text-yellow-100">{author.name}</span>
                         </h1>
-                        <div className="crimson lg:crimson-xl text-white">
+                        <div className="crimson lg:crimson-xl text-purple-500">
                             <BlockContent blocks={author.bio} projectId="w6gbeasc" dataset="production" />
                         </div>
                     </div>
