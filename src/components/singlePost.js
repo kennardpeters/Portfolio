@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import sanityClient from "../client.js";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
+//mport ivNight from "../ivNight.jpg";
 
 //segments out urls for each blog post
 const builder = imageUrlBuilder(sanityClient);
@@ -36,20 +37,20 @@ export default function SinglePost() {
     if (!singlePost) return <div>Loading...</div>;
 
     return (
-        <main className="bg-blue-900 min-h-screen p-12">
+        <main className="bg-black min-h-screen p-12">
             <article className="container shadow-lg mx-auto bg-yellow-100 rounded-lg">
                 <header className="relative"> 
                     <div className="absolute h-full w-full flex items-center justify-center p-8">
-                        <div className="bg-white bg-opacity-75 rounded p-12">
-                            <h1 className="cursive text-3xl lg:text-6xl mb-4">
+                        <div className="bg-yellow-300 bg-opacity-75 rounded p-12">
+                            <h1 className="cindec text-3xl lg:text-6xl mb-4 text-blue-900">
                                 {singlePost.title}
                             </h1>
-                            <div className="flex justify-center text-gray-800">
+                            <div className="flex justify-center text-purple-800">
                                 <img src={urlFor(singlePost.authorImage).url()}
                                 alt={singlePost.name}
                                 className="w-10 h-10 rounded-full"
                                 />
-                                <p className="cursive flex items-center pl-2 text-2xl">
+                                <p className="ballet flex items-center pl-2 text-2xl">
                                     {singlePost.name} 
                                 </p>
                             </div>

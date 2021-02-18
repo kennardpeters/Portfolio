@@ -19,11 +19,30 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&family=Monsieur+La+Doulaise&display=swap');
+
 /*Custom Elments required*/
 .ballet {
   font-family: 'Ballet', cursive;
   font-weight: 700;
 }
+.cinzel {
+  font-family: 'Cinzel';
+  font-weight: 400;
+
+}
+
+.cindec {
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 400;
+
+}
+
+
 .cursive {
   font-family: "Amatic SC", cursive;
   font-weight: 700;
@@ -39,6 +58,11 @@
 .hanalei {
   font-family: "Hanalei", cursive;
   font-weight: 700;
+}
+
+.monsieur {
+  font-family: 'Monsieur La Doulaise', cursive;
+  font-weight: 400;
 }
 
 .orbitron {
@@ -65,4 +89,15 @@
 
 .home-name {
   font-size: 150px;
+}
+
+span.crop {
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: -75%;
+  transform-origin: 50% 50%;
+  transform: rotate(45deg);
+  z-index: -1;
 }

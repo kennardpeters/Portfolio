@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
-import ivshot from "../ivshot.jpeg";
+import ivshot from "../beachView.jpg";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 
@@ -26,19 +26,19 @@ export default function About() {
     if(!author) return <div>Loading...</div>;
 
     return (
-        <main className="relative">
-            <img src={ivshot} alt="IV Scene" className="absolute w-full" />
+        <main className="relative bg-black min-h-screen p-12">
+            <img src={ivshot} alt="IV Scene" className="absolute object-cover" />
             <div className="p-10 lg:pt-48 container mx-auto relative">
-                <section className="bg-black rounded-lg shadow-2xl lg:flex p-20">
+                <section className="bg-black bg-opacity-80 rounded-lg shadow-2xl lg:flex p-20">
                     <img src={urlFor(author.authorImage).url()} 
                     className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8"
                     alt={author.name} />
                     <div className="text-lg flex-col justify-center">
-                        <h1 className="crimson text-6xl text-purple-300 mb-4">
+                        <h1 className="crimson text-6xl text-green-500 mb-4">
                             Hello, I'm{" "}
                             <span className="ballet text-yellow-100">{author.name}</span>
                         </h1>
-                        <div className="crimson lg:crimson-xl text-purple-500">
+                        <div className="cindec lg:cindec-xl text-blue-500">
                             <BlockContent blocks={author.bio} projectId="w6gbeasc" dataset="production" />
                         </div>
                     </div>
