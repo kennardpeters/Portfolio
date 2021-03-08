@@ -8,10 +8,13 @@ export default function Project() {
         //GROQ query
         sanityClient.fetch(`*[_type == "project"]{
             title,
-            date,
-            place,
+            mainImage{
+                asset->{
+                  _id,
+                  url
+                 }
+               },
             description,
-            projectType,
             link,
             tags
         }`).then((data) => setProjectData(data))
@@ -19,9 +22,38 @@ export default function Project() {
     }, []);
     return(
         <main className="bg-black min-h-screen p-12">
+            
+        <section className="container mx-auto">
+            <h1 className="text-5xl flex justify-center ballet text-yellow-100 bg-black">Languages/Frameworks</h1>
+            <h2 className="text-lg text-green-600 flex justify-center mb-12 bg-black">Welcome to my projects page!</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 static">
+                {projectData && projectData.map((project, index) => (
+                <article>
+                        <span className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-600 opacity-75" 
+                        key={index }
+                        >
+                         <img 
+                         src={project.mainImage.asset.url}
+                         alt=""
+                         className="w-full h-full rounded-r object-cover absolute"/>
+                        <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
+                                <h3 className="text-gray-800 text-lg font-bold px-3 py-4 crimson bg-blue-700 text-yellow-100 bg-opacity-75 rounded">{project.title}</h3>
+                        </span>
+                        </span>
+                </article>
+                ))}
+            </div>
+
+        </section>
+        </main>
+    )
+}
+{/* <Link to={"/project/" + project.slug.current} key={project.slug.current}></Link>
+</Link> */}
+{/* <main className="bg-black min-h-screen p-12">
             <section className="container mx-auto">
-                <h1 className="text-5xl flex justify-center ballet text-yellow-100">My Projects</h1>
-                <h2 className="text-lg text-green-600 flex justify-center mb-12">Welcome to my projects page!</h2>
+                <h1 className="text-4xl flex justify-center ballet text-yellow-100">Coding Languages</h1>
+                <h2 className="text-lg text-green-600 flex justify-center mb-12">Languages/Frameworks</h2>
                 <section className="grid grid-cols-2 gap-8">
                     {projectData && projectData.map((project, index) => (
                     <article className="relative rounded-lg shadow-xl bg-green-600 p-16">
@@ -62,6 +94,4 @@ export default function Project() {
                     ))}
                 </section>
             </section>
-        </main>
-    )
-}
+        </main> */}

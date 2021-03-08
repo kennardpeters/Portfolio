@@ -20,14 +20,14 @@ export default function NavBar() {
                     className="inline-flex items-center py-3 px-3 my-6 rounded text-yellow-200 hover:text-blue-100"
                     activeClassName="text-red-100 bg-blue-900"
                     >
-                        Blog Posts
+                        Projects
                     </NavLink>
                     <NavLink 
                     to="/project"
                     className="inline-flex items-center py-3 px-3 my-6 rounded text-yellow-200 hover:text-green-100"
                     activeClassName="text-red-100 bg-green-900"
                     >
-                        Projects
+                        Languages
                     </NavLink>
                     <NavLink to="/about"
                     className="inline-flex items-center py-3 px-3 my-6 rounded text-yellow-200 hover:text-purple-100"
@@ -38,6 +38,7 @@ export default function NavBar() {
                 </nav>
                 <div className="inline-flex py-3 px-3 my-6">
                     <SocialIcon url="https://www.linkedin.com/in/kennard-peters-a0062313a/" className="mr-4" target="_blank" fgColor="#fff" style={{ height: 35, width: 35}} />
+                    <SocialIcon url="https://github.com/kennardpeters" className="mr-4" target="_blank" fgColor="#fff" style={{ height: 35, width: 35}} />
 
                 </div>
             </div>
