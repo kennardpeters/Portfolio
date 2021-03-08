@@ -25,7 +25,7 @@ export default function Project() {
             
         <section className="container mx-auto">
             <h1 className="text-5xl flex justify-center ballet text-yellow-100 bg-black">Languages/Frameworks</h1>
-            <h2 className="text-lg text-green-600 flex justify-center mb-12 bg-black">Welcome to my projects page!</h2>
+            <h2 className="text-lg text-green-600 flex justify-center mb-12 bg-black">Languages/Frameworks I have used in Projects</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 static">
                 {projectData && projectData.map((project, index) => (
                 <article>
