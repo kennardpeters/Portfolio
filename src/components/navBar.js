@@ -16,14 +16,14 @@ export default function NavBar() {
                         Kennard
                     </NavLink>
                     <NavLink 
-                    to="/post"
+                    to="/projects"
                     className="inline-flex items-center py-3 px-3 my-6 rounded text-yellow-200 hover:text-blue-100"
                     activeClassName="text-red-100 bg-blue-900"
                     >
                         Projects
                     </NavLink>
                     <NavLink 
-                    to="/project"
+                    to="/lang"
                     className="inline-flex items-center py-3 px-3 my-6 rounded text-yellow-200 hover:text-green-100"
                     activeClassName="text-red-100 bg-green-900"
                     >
