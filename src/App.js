@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import home from "./components/home";
 import about from "./components/about";
 import singlePost from "./components/singlePost";
-import lang from "./components/lang"
+import lang from "./components/projects"
 import projects from "./components/projects";
 import NavBar from "./components/navBar";
 
