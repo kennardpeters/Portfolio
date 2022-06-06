@@ -32,7 +32,7 @@ export default function About() {
             <div className="p-10 lg:pt-48 container mx-auto relative">
                 <section className="bg-black bg-opacity-80 rounded-lg shadow-2xl lg:flex p-20">
                     <img src={urlFor(author.authorImage).url()} 
-                    className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8"
+                    className="rounded w-32 h-32 lg:w-64 lg:h-64 sm:w-16 sm:h-16 mr-8"
                     alt={author.name} />
                     <div className="text-lg flex-col justify-center">
                         <h1 className="crimson text-6xl text-green-500 mb-4">
