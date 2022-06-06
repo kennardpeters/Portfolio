@@ -5,13 +5,13 @@ import { SocialIcon } from "react-social-icons";
 export default function NavBar() {
     return (
         <header className="bg-black">
-            <div className="container md:container md:mx-auto flex justify-between">
+            <div className="container sm:container sm:mx-auto flex justify-between">
                 <nav className="flex">
                     <NavLink 
                     to="/" 
                     exact 
                     activeClassName="text-white"
-                    className="inflex-flex items-center py-6 px-3 mr-4 text-yellow-200 hover:text-white-800 text-4xl font-bold ballet tracking-widest"
+                    className="inflex-flex items-center py-6 px-3 mr-4 text-yellow-200 hover:text-white-800 sm:text-4xl font-bold ballet tracking-widest text-md"
                     >
                         Kennard
                     </NavLink>
